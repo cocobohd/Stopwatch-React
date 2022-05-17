@@ -8,8 +8,9 @@ export default function Timer() {
   const [milisec, setMilisec] = React.useState(0)
   const [laps, setLaps] = React.useState([])
 
-  const renderLaps = laps.map(item => {
+  const renderLaps = laps.map((item) => {
     return <Laps 
+      id = {item.id}
       key = {item.key}
       min = {item.minutesLaps}
       sec = {item.secondsLaps}
@@ -46,7 +47,8 @@ export default function Timer() {
    stopBtn.addEventListener("click", () => clearInterval(int))
    lapBtn.addEventListener("click", () => {
      let newObj = {
-       key: Math.floor(Math.random()*200),
+       id: laps.length + 1,
+       key: Math.floor(Math.random()*2000),
        minutesLaps: minutes,
        secondsLaps: seconds,
        milisecondsLaps: miliseconds

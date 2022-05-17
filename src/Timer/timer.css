@@ -1,4 +1,7 @@
-
+.timer {
+  position: relative;
+  top: 100px;
+}
 .stopwatch--current {
   font-size: 160px;
   color: white;
