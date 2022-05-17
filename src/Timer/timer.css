@@ -1,0 +1,45 @@
+
+.stopwatch--current {
+  font-size: 160px;
+  color: white;
+  margin: 0;
+}
+
+.btns {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+#start {
+  background-color: rgba(172, 255, 47, 0.5);
+  transition: 0.5s all;
+}
+#start:hover {
+  background-color: rgb(172, 255, 47);
+}
+
+#stop {
+  background-color: rgba(253, 53, 53, 0.5);
+  transition: 0.5s all;
+}
+#stop:hover {
+  background-color: rgb(253, 53, 53);
+}
+
+#reset {
+  background-color: rgba(253, 250, 53, 0.5);
+  transition: 0.5s all;
+}
+
+#reset:hover {
+  background-color: rgb(253, 250, 53);
+}
