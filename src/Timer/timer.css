@@ -22,27 +22,54 @@
   cursor: pointer;
 }
 
-#start {
+.start.active,
+.lap.active,
+.stop.active,
+.reset.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.start {
   background-color: rgba(172, 255, 47, 0.5);
   transition: 0.5s all;
+  opacity: 0.6;
+  pointer-events: none;
 }
-#start:hover {
+
+.start:hover {
   background-color: rgb(172, 255, 47);
 }
 
-#stop {
+.lap {
+  background-color: rgba(47, 179, 255, 0.5);
+  transition: 0.5s all;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.lap:hover {
+  background-color: rgb(47, 179, 255);
+}
+
+.stop {
   background-color: rgba(253, 53, 53, 0.5);
   transition: 0.5s all;
+  opacity: 0.6;
+  pointer-events: none;
 }
-#stop:hover {
+
+.stop:hover {
   background-color: rgb(253, 53, 53);
 }
 
-#reset {
+.reset {
   background-color: rgba(253, 250, 53, 0.5);
   transition: 0.5s all;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
-#reset:hover {
+.reset:hover {
   background-color: rgb(253, 250, 53);
 }
