@@ -1,2 +1,2 @@
-# Hi, this is my stopWatch 
+# Hi, this is stopWatch 
 https://merry-biscochitos-780ff6.netlify.app/
